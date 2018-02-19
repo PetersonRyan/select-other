@@ -1,0 +1,9 @@
+.close-select-other{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.close-select-other:hover{
+    color: grey;
+    cursor: pointer;
+}
