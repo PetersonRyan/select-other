@@ -5,21 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Select Other Demo</title>
 
-    <!-- Bootstrap! -->
+    <!-- Bootstrap and FontAwesome! (Only required for demo) -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
 
     <link rel="stylesheet" href="../dist/select-other.css">
+    <!-- CDN Copy -->
+    <!--<link rel="stylesheet" href="https://cdn.rawgit.com/PetersonRyan/select-other/master/dist/select-other.css">-->
+
 </head>
 <body style="padding-bottom: 100px;">
     <div class="container">
         <div class="row">
-            <h1>Select Other</h1>
-            <h3>A jQuery plugin that gives regular select boxes more versatility</h3>
+            <div class="col-md-12">
+                <h1>Select Other</h1>
+                <h3>A jQuery plugin that gives regular select boxes more versatility</h3>
+            </div>
         </div>
         <hr>
         <div class="row">
-            <p>Often times when filling in a form that gives you multiple options for a question, the author will give an "other" option. Sometimes this will
-            trigger another field to pop up for you to type in your answer. Sometimes that field is always there. Often it looks like one of these two examples.</p>
+            <div class="col-md-12">
+                <p>Often times when filling in a form that gives you multiple options for a question, the author will give an "other" option. Sometimes this will
+                trigger another field to pop up for you to type in your answer. Sometimes that field is always there. Often it looks like one of these two examples.</p>
+            </div>
         </div>
         <div class="row">
             <div class="col-md-6">
@@ -54,16 +63,22 @@
         <hr>
 
         <div class="row">
-            <h2>How can this be made more elegant?</h2>
-            <br>
-            <h3>The solution of course, is Select Other!</h3>
-            <p>Select Other is a jQuery plugin that will transform any select element into an input field on command!</p>
-            <p>After transforming, an exit button is placed within the field allowing it to be changed back to a select field.</p>
-            <p>Select Other simply changes the element tag. So all styling of the field is kept during the transformation. Positions for the exit button are
-            calculated from its position and dimensions, so it will always be placed on the right side of the field.</p>
+            <div class="col-md-12">
+                <h2>How can this be made more elegant?</h2>
+                <br>
+                <h3>The solution of course, is Select Other!</h3>
+                <p>Select Other is a jQuery plugin that will transform any select element into an input field on command!</p>
+                <p>After transforming, an exit button is placed within the field allowing it to be changed back to a select field.</p>
+                <p>Select Other simply changes the element tag. So all styling of the field is kept during the transformation. Positions for the exit button are
+                calculated from its position and dimensions, so it will always be placed on the right side of the field.</p>
+            </div>
         </div>
 
-        <div class="row"><h2>Demo</h2></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Demo</h2>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-6">
                 <h3>Regular HTML formatting</h3>
@@ -122,17 +137,32 @@
             </div>
         </div>
 
-        <div class="row"><h2>Technical Notes</h2></div>
         <div class="row">
-            <h4>How to use</h4>
-            <p>Download the CSS and JavaScript files from the dist folder on GitHub. <a href="https://github.com/PetersonRyan/select-other"><b>Link</b></a></p>
-            <p>jQuery is required to use this plugin. Ensure it is called before select-other.js</p>
-            <p>Simply import the CSS and JavaScript files to the page you would like to use it on. Then call it using any jQuery identifier. Like this:</p>
-            <span style="font-family: 'Courier New'; font-weight: bold; background-color: rgb(230,230,230); padding: 8px; border-radius: 5px;">$(".your-class").selectOther();</span>
-            <br>
-            <br>
-            <p>The function selectOther takes an optional string as a parameter allowing you to set your trigger word for transforming the field. By default it is set to "Other".</p>
-            <p>If that word is not already in the options available, it will be added in.</p>
+            <div class="col-md-12">
+                <h2>Technical Notes</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4>How to use</h4>
+                <p>Download the CSS and JavaScript files from the dist folder on GitHub. <a href="https://github.com/PetersonRyan/select-other"><b>Link</b></a></p>
+                <p>jQuery is required to use this plugin. Ensure it is called before select-other.js</p>
+                <p>Simply import the CSS and JavaScript files to the page you would like to use it on. Then call it using any jQuery identifier. Like this:</p>
+                <span style="font-family: 'Courier New'; font-weight: bold; background-color: rgb(230,230,230); padding: 8px; border-radius: 5px;">$(".your-class").selectOther();</span>
+                <br>
+                <br>
+                <p>The function selectOther takes an optional string as a parameter allowing you to set your trigger word for transforming the field. By default it is set to "Other".</p>
+                <p>If that word is not already in the options available, it will be added in.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <a href="https://github.com/PetersonRyan/select-other">
+                    <h4>Check out this project on GitHub!</h4>
+                    <i class="fab fa-github fa-3x"></i>
+                </a>
+            </div>
         </div>
 
     </div>
@@ -140,6 +170,8 @@
 <scripts>
     <script src="jQuery.js"></script>
     <script src="../dist/select-other.js"></script>
+    <!-- CDN Copy -->
+    <!--<script src="https://cdn.rawgit.com/PetersonRyan/select-other/master/dist/select-other.js"></script>-->
     <script>
         $("#fruit-selector").change(function(){
             if ($(this).val() == "other") $("#fruit-input").show();
