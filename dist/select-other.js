@@ -28,14 +28,14 @@
                 parent.css("position", "relative");
 
                 //Compute position for the x button
-                var topOffset = current.position().top + parseFloat(current.css("border-top")) + ((current.innerHeight() - closeButton.height()) / 2) + parseFloat(current.css("margin-top"));
+                var topOffset = current.position().top + parseFloat(current.css("border-top")?current.css("border-top"):0) + ((current.innerHeight() - closeButton.height()) / 2) + parseFloat(current.css("margin-top"));
                 var leftOffset = current.position().left + parseFloat(current.css("margin-left")) + parseFloat(current.innerWidth()) - 15;
                 closeButton.css("left", leftOffset + "px").css("top", topOffset + "px");
 
                 //Set back to select and remove x button on click
                 closeButton.click(function(){
                     current.changeElementType("select").val($("#" + id + " option:first").val());
-                    this.remove();
+                    $(this).remove();
                 });
 
 
