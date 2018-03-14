@@ -3,7 +3,7 @@ Often times a select field on a website will give inefficient options when they 
 
 The solution for this is Select Other, a jQuery plugin that allows dropdown select field to transform into input fields on command!
 
-### [DEMO](http://petersonryan.com/projects/select-other/demo/demo.html)
+### [DEMO](https://petersonryan.com/projects/select-other/)
 
 ## Setup
 ```html
