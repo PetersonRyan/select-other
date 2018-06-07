@@ -9,7 +9,7 @@ The solution for this is Select Other, a jQuery plugin that allows dropdown sele
 ```html
 <!-- Dependencies -->
 <script src="jQuery.js"></script>
-<!-- Proper Anchor -->
+<!-- Select Other -->
 <script src="dist/select-other.js"></script>
 <link href="dist/select-other.css" rel="stylesheet"/>
 <script>
