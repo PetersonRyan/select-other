@@ -17,5 +17,12 @@ The solution for this is Select Other, a jQuery plugin that allows dropdown sele
 </script>
 ```
 
+## CDN
+Install select-other on your website using the CDN
+```html
+<script src="https://cdn.jsdelivr.net/gh/PetersonRyan/select-other@v1.0/dist/select-other.js">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/PetersonRyan/select-other@v1.0/dist/select-other.css">
+```
+
 ## License
 MIT License
